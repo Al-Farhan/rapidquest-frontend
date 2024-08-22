@@ -4,9 +4,10 @@ import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
-    <Routes path="/" element={<Layout />}>
-      <Route index element={<Dashboard />} />
-      
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Dashboard />} />
+      </Route>
     </Routes>
   );
 }
